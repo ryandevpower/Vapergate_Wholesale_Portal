@@ -74,7 +74,7 @@
     overlay.innerHTML =
       '<div class="gp-portal-card">' +
       '  <div class="gp-top-line"></div>' +
-      '  <img class="gp-logo" src="https://lh3.googleusercontent.com/d/1OthtntijCELlEGcxECTkSL9iQMUjoQXm" alt="Vapergate Wholesale">' +
+      '  <img class="gp-logo" src="https://lh3.googleusercontent.com/d/1W-8pjKqM1ZHPCW3uFgCOo1U4EB5inBZ-" alt="Vapergate Wholesale">' +
       '  <div class="gp-label">ACCOUNT PORTAL</div>' +
       '  <h1 class="gp-title">ACCOUNT LOGIN REQUIRED</h1>' +
       '  <p class="gp-description">This storefront is restricted to verified approved accounts only, Please sign in:</p>' +
