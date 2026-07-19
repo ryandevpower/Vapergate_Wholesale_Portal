@@ -1,0 +1,240 @@
+/* ==========================================================================
+   ADVANCED B2B APPLICTION THEME - HIGH GRAPHICS INFRASTRUCTURE
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap");
+
+/* ANTI-FLICKER FULL DECK SCREEN */
+#custom-gate-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  /* High-end matte black acrylic blur effect */
+  background: radial-gradient(
+    circle at center,
+    rgba(24, 28, 32, 0.98) 0%,
+    rgba(12, 14, 16, 0.99) 100%
+  ) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  z-index: 2147483647 !important;
+  display: none;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif !important;
+  box-sizing: border-box !important;
+  padding: 24px !important;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+#custom-gate-overlay.gp-visible {
+  opacity: 1 !important;
+}
+
+/* KINETIC INDUSTRIAL CONTAINER CARD */
+.gp-portal-card {
+  background: #141619 !important;
+  width: 100% !important;
+  max-width: 450px !important;
+  padding: 45px 40px 35px 40px !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 40px 90px rgba(0, 0, 0, 0.85),
+    0 0 1px 1px rgba(255, 255, 255, 0.05) inset !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  border: 1px solid #23272c !important;
+  transform: scale(0.95);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+#custom-gate-overlay.gp-visible .gp-portal-card {
+  transform: scale(1) !important;
+}
+
+/* BRAND BLUE DECORATIVE ANCHOR RAIL */
+.gp-top-line {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 6px !important;
+  background: linear-gradient(90deg, #3bb2da, #5cc9ee) !important;
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
+.gp-logo {
+  display: block !important;
+  max-width: 250px !important;
+  height: auto !important;
+  margin: 0 auto 28px auto !important;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5)) !important;
+}
+
+/* TECH BADGE ACCENT BUTTON */
+.gp-label {
+  display: inline-block !important;
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 16px !important;
+  letter-spacing: 2.5px !important;
+  color: #49bce3 !important;
+  background: #090a0c !important;
+  padding: 6px 20px !important;
+  border-radius: 6px !important;
+  border: 1px solid #1e2226 !important;
+  margin-bottom: 24px !important;
+  line-height: 1 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* MATTE WHITE BLOCK CAPITALS */
+.gp-title {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 46px !important;
+  font-weight: normal !important;
+  color: #ffffff !important;
+  margin: 0 0 16px 0 !important;
+  letter-spacing: 1.5px !important;
+  line-height: 0.95 !important;
+}
+
+/* PREMIUM CONTRAST PARAGRAPH DESCRIPTIONS */
+.gp-description {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #49bce3 !important;
+  line-height: 1.6 !important;
+  margin: 0 auto 32px auto !important;
+  max-width: 380px !important;
+  letter-spacing: 0.2px !important;
+}
+
+.gp-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-bottom: 24px !important;
+}
+
+/* BRAND ACCENT BUTTON WITH TACTILE SCALE MECHANICS */
+.gp-btn-login {
+  width: 100% !important;
+  font-family: "Bebas Neue", sans-serif !important;
+  padding: 16px 24px !important;
+  font-size: 26px !important;
+  letter-spacing: 1.5px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  cursor: pointer !important;
+  background: #49bce3 !important;
+  color: #090a0c !important;
+  box-shadow: 0 4px 15px rgba(73, 188, 227, 0.2) !important;
+  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+.gp-btn-login:hover {
+  background: #5cc9ee !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 25px rgba(73, 188, 227, 0.4) !important;
+}
+.gp-btn-login:active {
+  transform: translateY(0px) !important;
+}
+
+/* UNDERLINE UTILITY INTERFACES */
+.gp-reset {
+  display: inline-block !important;
+  font-size: 13px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed rgba(73, 188, 227, 0.5) !important;
+  margin-bottom: 28px !important;
+  transition: all 0.2s ease !important;
+}
+.gp-reset:hover {
+  color: #49bce3 !important;
+  border-bottom-color: #49bce3 !important;
+}
+
+.gp-footer {
+  font-size: 12px !important;
+  color: rgba(73, 188, 227, 0.6) !important;
+  border-top: 1px solid #1e2226 !important;
+  padding-top: 20px !important;
+  margin-top: 5px !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* ==========================================================================
+   CUSTOM SYSTEM NOTIFICATION SLATE (THE PREMIUM TOAST BOX)
+   ========================================================================== */
+.gp-toast-notification {
+  position: fixed !important;
+  bottom: -100px !important;
+  left: 50% !important;
+  transform: translateX(-50%) scale(0.9) !important;
+  background: #1c2024 !important;
+  border: 1px solid #33aed7 !important;
+  border-top: 4px solid #49bce3 !important;
+  padding: 18px 24px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6) !important;
+  z-index: 2147483647 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  width: 90% !important;
+  max-width: 420px !important;
+  box-sizing: border-box !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.gp-toast-notification.gp-toast-active {
+  bottom: 30px !important;
+  transform: translateX(-50%) scale(1) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.gp-toast-content {
+  flex-grow: 1 !important;
+  text-align: left !important;
+}
+
+.gp-toast-title {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 18px !important;
+  letter-spacing: 1px !important;
+  color: #ffffff !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.gp-toast-desc {
+  font-size: 12px !important;
+  color: #49bce3 !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+}
+
+.gp-toast-close {
+  background: none !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+  padding: 0 5px !important;
+  opacity: 0.6 !important;
+  transition: opacity 0.2s ease !important;
+}
+.gp-toast-close:hover {
+  opacity: 1 !important;
+  color: #49bce3 !important;
+}
