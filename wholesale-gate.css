@@ -238,3 +238,67 @@
   opacity: 1 !important;
   color: #49bce3 !important;
 }
+
+/* --------------------------------------------------------------------------
+   Extensions only — same portal palette / type / motion language
+   -------------------------------------------------------------------------- */
+
+/* Soft lock: keep store painted under the portal, but non-interactive */
+body.gp-gate-locked {
+  overflow: hidden !important;
+}
+
+body.gp-wholesale-approved {
+  overflow: auto !important;
+}
+
+.gp-spinner {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 4px solid rgba(73, 188, 227, 0.15);
+  border-left-color: #49bce3;
+  animation: gp-spin 0.9s linear infinite;
+}
+
+@keyframes gp-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gp-actions {
+  gap: 12px !important;
+}
+
+/* Secondary action — same Bebas/Inter industrial language as .gp-btn-login */
+.gp-btn-request {
+  width: 100% !important;
+  font-family: "Bebas Neue", sans-serif !important;
+  padding: 16px 24px !important;
+  font-size: 26px !important;
+  letter-spacing: 1.5px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  background: #090a0c !important;
+  color: #49bce3 !important;
+  border: 1px solid #1e2226 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.gp-btn-request:hover {
+  background: #12151a !important;
+  border-color: #49bce3 !important;
+  color: #5cc9ee !important;
+  transform: translateY(-2px) !important;
+}
+
+.gp-btn-request:active {
+  transform: translateY(0) !important;
+}
+
+.gp-description strong {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
